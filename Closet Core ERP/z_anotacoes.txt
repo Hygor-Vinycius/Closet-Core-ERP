@@ -1,0 +1,8 @@
+1) Incluir validação de dados de entrada com schemas.py
+2) Corrigir erro "500 Internal Server Error" ao criar uma compra com fornecedor inválido.
+3) Verificar todas as funcionalidades de excluir ou estornar, validando se há vendas, compras, pagamentos ativos. Se houver, não permitir a exclusão. Por exemplo: não permitir 
+a exclusão de um fornecedor se houver compras para com o mesmo.
+4) Armazenar a senha dos usuários em hash
+
+
+xx) Utilizar os schemas para validar os dados de entrada no banco de dados.

@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="916A788C-50C0-A82D-B973-E9A40A50096F" name="itens_venda">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:24:50 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_item" id="2329C9FA-F512-4CDB-76AB-F3874CC77A31">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:06 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="9B35C3BD-9299-6997-4348-B3AE9A7733EC">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:06 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_unitario" id="DD6B1147-B877-BC6C-1B8A-D1566602C5B9">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:06 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="subtotal" id="E028FA36-5204-77BD-D0C1-43FE3375976C">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:21 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desconto" id="2F40CE74-4391-A9EC-F3D6-EEA98C1B21D1">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:36 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vendas_id_venda" id="8C65924C-5A98-3C76-421C-E67E5C71BDC8">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:56 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD2C4517-1C85-3E9C-18D7-ECB1500F3644" referredColumn="A4420D4A-0B14-BCF7-0030-6F1052A3BFE3"/>
+</associations>
+</Column>
+<Column name="variacao_produtos_id_variacao" id="AE0166E9-F075-36DA-314C-E205D7E1BB7D">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:27:04 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22A55575-0B70-FF17-0E47-4A37A82CF627" referredColumn="0DB5A81D-850F-8C19-6CCB-AEAD42BF72CA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43898C06-51E2-B8B7-5A57-72BB4CEE5BA4" name="itens_venda_vendas_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:26:56 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C65924C-5A98-3C76-421C-E67E5C71BDC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63D1EB4E-7557-1203-6BEC-9340A5DB8F6E" name="itens_venda_variacao_produtos_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:27:04 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE0166E9-F075-36DA-314C-E205D7E1BB7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

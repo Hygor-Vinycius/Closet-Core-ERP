@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D1BE446-D134-BB27-9DB0-C2CF2CA2357B" name="movimento_estoque">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:48:45 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_movimento" id="79AF941B-7414-893D-1244-52AD5F6E587C">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:49:03 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_movimento" id="286C7517-6D1F-251C-F7C1-B3D05945734F">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:49:33 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="356E2823-E5D0-FC85-1891-DB37F3C9AF36">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:49:47 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_movimento" id="426A42DC-B65D-547E-FA60-37BA141AFC6D">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:50:11 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="referencia_movimento" id="84EF28D8-C17E-001E-CC14-D9856DB53F0F">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:57:36 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fornecedor" id="C4E7AE8F-7DE9-687D-1308-FEFCC6D9CB35">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:57:36 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="variacao_produtos_id_variacao" id="C921CE28-A641-4072-7206-AF6599E412A9">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:57:55 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6355D299-A43F-EC21-6479-53C6FD63ADE1" referredColumn="0DB5A81D-850F-8C19-6CCB-AEAD42BF72CA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA7DCB17-62C7-E2EF-FEEA-1E0E9DA8B43B" name="movimento_estoque_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:49:03 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79AF941B-7414-893D-1244-52AD5F6E587C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A387E2BD-8C57-8EEE-7502-9D334FCFD417" name="movimento_estoque_variacao_produtos_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:57:55 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C921CE28-A641-4072-7206-AF6599E412A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

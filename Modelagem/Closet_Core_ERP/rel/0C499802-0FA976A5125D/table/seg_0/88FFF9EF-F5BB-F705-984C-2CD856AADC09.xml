@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88FFF9EF-F5BB-F705-984C-2CD856AADC09" name="compras">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:26:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_compra" id="6430B407-8255-6EF7-0A3A-1159EEC24ADB">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:26:59 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_compra" id="762B84CA-F9A6-1A6F-BC71-8E9CAA0618F0">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:27:16 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chave_acesso_nfe" id="43262BBE-9571-63C2-2A83-23B617327C2D">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:28:40 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>44 CHAR</dataTypeSize>
+<ownDataTypeParameters>44 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_total" id="9DD8F1BB-81B3-F3D0-8141-CDBA2C1F7F97">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:28:40 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nota_fiscal" id="29278CD7-DA82-C298-CF67-72046FAFF067">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:29:05 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="6729F793-399B-1D73-64DF-6FC4C9B20A4F">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:31:57 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ncm" id="EF2C8CD5-F354-DA81-3846-804D92DA236B">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:32:38 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cest_cst" id="4156FBAF-537C-D2C3-CF64-C0FD403824E8">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:33:15 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="icms" id="9C53039C-E8AF-40B4-1912-6045F384B5B6">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:33:35 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pis" id="4694CA39-6811-7085-AC09-6ED929FCB781">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:34:46 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="icms_st" id="2A4CFE70-DFEC-43A5-139E-0C9396D9449B">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:34:46 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10000,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diferencial_aliquota" id="0AA923C6-F160-60ED-B5A2-4AE0669E523F">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:34:46 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fornecedor_id_fornecedor" id="89207887-01DD-6923-A985-2DA552B4FB5A">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:37:11 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57F70050-AA6E-4EFD-482A-F0449EE21F1B" referredColumn="2F4B868D-E8D9-B770-1CA1-6022BA8699DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E70CAB3-A527-7280-130A-1698ADA1F8C1" name="compras_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:26:59 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6430B407-8255-6EF7-0A3A-1159EEC24ADB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1903E43F-B6A3-5FA4-2B2F-BF24DBD129FE" name="compras_fornecedor_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:37:11 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89207887-01DD-6923-A985-2DA552B4FB5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

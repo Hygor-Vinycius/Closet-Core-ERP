@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F56A24B-3952-7E18-E599-C86243BFC463" name="categoria_produtos">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:06:32 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="D6FA5402-8A6A-E8D3-4F64-88FC8781DB3C">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:06:57 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="BD56CC1B-EDCF-EB55-D7FF-604A8FEA23A8">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:07:29 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_criacao" id="5EC4B338-D7A7-3DE2-1657-FAC66A3EBDA6">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:07:49 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="produtos_id_produto" id="38DD36EC-7734-754C-0FA7-3ED788516B36">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:09:09 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01FACEC4-23D1-8724-85CD-00A4040DCC84" referredColumn="77422D88-CF1A-82B2-D801-13C6371CEA62"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="949E9845-2BE9-0AFE-AFBA-61DA7C521E2C" name="categoria_produtos_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:06:57 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6FA5402-8A6A-E8D3-4F64-88FC8781DB3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE97BFA9-3366-F16A-873D-A601555EFD78" name="categoria_produtos_produtos_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 20:09:09 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38DD36EC-7734-754C-0FA7-3ED788516B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

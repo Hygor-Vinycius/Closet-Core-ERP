@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E9C6E88C-0735-E104-AE10-F565ECA34139" containerWithKeyObject="A5AEAC4E-FBCA-7B14-FAC1-0B2F3B19097A" localFKIndex="5FD62676-0EF0-F8C0-98A5-167214E7DA68" name="recebimentos_formas_pagamentos_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:44:49 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<referredTableLongName>formas_pagamentos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A9464DC9-6901-328B-BE2C-393FA23D6AD1</referredTableID>
+<keyObject>7ACC2F18-34FB-6591-F9A9-7AC8618ACC3C</keyObject>
+<referredKeyID>7ACC2F18-34FB-6591-F9A9-7AC8618ACC3C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_forma_pgto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

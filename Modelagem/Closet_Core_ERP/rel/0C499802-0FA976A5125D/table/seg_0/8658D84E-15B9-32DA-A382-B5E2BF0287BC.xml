@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8658D84E-15B9-32DA-A382-B5E2BF0287BC" name="estoque">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:00:07 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_estoque" id="9EE9F259-CAFB-8A2E-44A0-FD208EC27DE6">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:00:28 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="3FE3A999-6712-74AB-8432-FC4A7BCC9A7B">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:01:24 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_atualizacao" id="CE2A7259-185C-F5C0-B00E-F2C8E5A7227F">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:01:24 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="variacao_produtos_id_variacao" id="A391F48F-202C-CB22-A835-9C0F9C164BF0">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:01:42 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="54988B6C-F7F7-B227-4A34-3A473AE10A3E" referredColumn="0DB5A81D-850F-8C19-6CCB-AEAD42BF72CA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ABA42792-61BD-8680-F3AD-ACE11BEA9048" name="estoque_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:00:28 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9EE9F259-CAFB-8A2E-44A0-FD208EC27DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39C100BF-3225-1C58-C30F-B94BBCD5F8B2" name="estoque_variacao_produtos_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:01:42 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A391F48F-202C-CB22-A835-9C0F9C164BF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2882ECD2-A3E1-ACC8-7A69-AC17A1C747D7" containerWithKeyObject="B5047636-BA6D-EA83-7696-EFACE2D3FCDC" localFKIndex="B717DEBF-D0FE-7588-D20B-6CB7DBC0F1B2" name="taxa_parcelamento_maquininhas_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:58 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<referredTableLongName>maquininhas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>054C3236-541E-82B7-0F8E-A326D257691C</referredTableID>
+<keyObject>C6B91A92-9867-A623-D193-6E0B8F84E5E6</keyObject>
+<referredKeyID>C6B91A92-9867-A623-D193-6E0B8F84E5E6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_maquininha</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F369E5C-B41D-7EAE-1ACD-C7B5667D243F" containerWithKeyObject="5B3B4435-F3C5-DAED-90C2-D00557FB7C49" localFKIndex="B12742F3-E939-9EFC-2F2B-E879B4858897" name="itens_compra_compras_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 01:47:00 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<referredTableLongName>compras</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>88FFF9EF-F5BB-F705-984C-2CD856AADC09</referredTableID>
+<keyObject>4E70CAB3-A527-7280-130A-1698ADA1F8C1</keyObject>
+<referredKeyID>4E70CAB3-A527-7280-130A-1698ADA1F8C1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_compra</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

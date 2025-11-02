@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9198766B-4AAE-F44B-F259-D8A1E45BFFC0" name="condicao_pagamento">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:16:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_condicao" id="5C30D931-342F-5915-8417-22990CC2B52F">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:18:12 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="8E34D4A5-8566-2D8C-DED9-02C1FDBF707D">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:18:12 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parcelas" id="128684FD-98F6-6DFC-ACF1-6721035B4EC8">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:18:12 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="intervalo_dias_parc" id="8ACA60D0-2672-5407-E9D1-B4EDEBC1C023">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:18:12 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contas_a_receber_id_contas" id="346928E0-7FE2-51B7-7A59-F6C97477C5A7">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:32:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70A8409E-5873-FB74-B02B-D223DA1173A4" referredColumn="5AD04E0D-5882-DF69-8AFB-4FDE34FB84E7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4165BC19-6BB9-4FCA-746C-101E4C73B1C3" name="condicao_pagamento_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:18:12 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C30D931-342F-5915-8417-22990CC2B52F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFEAFBDE-F22D-9F1C-BBED-E90273163851" name="condicao_pagamento_contas_a_receber_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:32:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346928E0-7FE2-51B7-7A59-F6C97477C5A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

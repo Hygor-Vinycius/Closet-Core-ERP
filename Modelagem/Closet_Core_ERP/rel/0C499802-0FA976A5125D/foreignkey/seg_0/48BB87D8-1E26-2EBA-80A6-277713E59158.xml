@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="48BB87D8-1E26-2EBA-80A6-277713E59158" containerWithKeyObject="A5AEAC4E-FBCA-7B14-FAC1-0B2F3B19097A" localFKIndex="CBBF28D5-9A51-8156-3606-69C9DCC458BB" name="recebimentos_contas_a_receber_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:35:52 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<referredTableLongName>contas_a_receber</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CFA26EA0-1994-9FB6-907F-CF97E38B95A9</referredTableID>
+<keyObject>0963835A-C0E4-519C-E993-2A8C35672C64</keyObject>
+<referredKeyID>0963835A-C0E4-519C-E993-2A8C35672C64</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_contas</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

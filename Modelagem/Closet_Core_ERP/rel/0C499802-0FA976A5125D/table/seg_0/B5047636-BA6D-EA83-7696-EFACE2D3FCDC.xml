@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5047636-BA6D-EA83-7696-EFACE2D3FCDC" name="taxa_parcelamento">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:51:28 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_taxa" id="4CE69150-7260-6EA2-2E29-528048A77CC5">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_parcelas" id="F3C1FC05-C845-9F07-31F6-844B6C558457">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="taxa" id="4A62D256-EA43-670E-84C0-9CE717D5BDA9">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,100,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="maquininhas_id_maquininha" id="4FF4ED9C-9FCD-9DF0-5719-79E011336EF7">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:58 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2882ECD2-A3E1-ACC8-7A69-AC17A1C747D7" referredColumn="3623942E-1F7A-7763-B58D-00F19E7192A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0710D71-2A47-7AF0-3224-59C2CCFAACCE" name="taxa_parcelamento_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:51 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CE69150-7260-6EA2-2E29-528048A77CC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B717DEBF-D0FE-7588-D20B-6CB7DBC0F1B2" name="taxa_parcelamento_maquininhas_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-12 01:52:58 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FF4ED9C-9FCD-9DF0-5719-79E011336EF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

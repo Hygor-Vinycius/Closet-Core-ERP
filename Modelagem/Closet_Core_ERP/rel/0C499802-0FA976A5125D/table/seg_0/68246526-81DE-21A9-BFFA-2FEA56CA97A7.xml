@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68246526-81DE-21A9-BFFA-2FEA56CA97A7" name="contas_a_pagar">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:50:06 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cta_a_pgto" id="C1B46B88-A49D-4311-A54D-243EC87A47A1">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:50:35 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_parcelas" id="B9D00179-B916-3786-61D9-C86ADAD2C9DD">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:52:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_emissao" id="39CA7A3A-063F-CC85-445E-A2B0C6783FB2">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:52:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_vencimento" id="955332CC-58CC-D24F-5A51-484689435AFE">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:52:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_original" id="F766CF16-DEF1-7245-95B6-19ACDDE062AE">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:52:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_pago" id="A3449421-937B-0C47-C681-0D851BD016E2">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:52:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo_devedor" id="8FE2DAD6-E1A1-C876-2F01-8C0CA3DFDD80">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:52:31 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10000</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10000,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_conta" id="695D37B4-BD56-CBB8-D330-C080FF2432E9">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:53:06 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="compras_id_compra" id="3C828B86-39A0-0327-9EB1-63C97F80A2B5">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:54:27 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="359EA9CE-AE84-260B-6FAE-E567C467363E" referredColumn="6430B407-8255-6EF7-0A3A-1159EEC24ADB"/>
+</associations>
+</Column>
+<Column name="fornecedor_id_fornecedor" id="61339792-C3F3-4C22-CD90-74ED8D0F8C05">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:57:02 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAD328D4-CAC1-AC26-5B57-7FFBF13F148D" referredColumn="2F4B868D-E8D9-B770-1CA1-6022BA8699DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15229AE8-0D56-7AFF-0D58-0701E8AAEDC6" name="contas_a_pagar_PK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:50:35 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1B46B88-A49D-4311-A54D-243EC87A47A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A6271AB-0191-CC1E-5AA6-DBEA9A797569" name="contas_a_pagar_compras_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:54:27 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C828B86-39A0-0327-9EB1-63C97F80A2B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7ED8257-1D0E-D895-255D-A6F030639AEB" name="contas_a_pagar_fornecedor_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-10 01:57:02 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61339792-C3F3-4C22-CD90-74ED8D0F8C05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

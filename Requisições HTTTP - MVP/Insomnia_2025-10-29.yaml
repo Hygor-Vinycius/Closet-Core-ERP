@@ -1,0 +1,1771 @@
+type: collection.insomnia.rest/5.0
+name: Closet Core ERP
+meta:
+  id: wrk_a192924133e74538ae7cb49c1626b018
+  created: 1757897024862
+  modified: 1758373569000
+  description: ""
+collection:
+  - name: Clientes
+    meta:
+      id: fld_9e238cf35a2d4025a32739ca0f7e8e4a
+      created: 1758389630018
+      modified: 1758389658275
+      sortKey: -1758389630018
+      description: ""
+    children:
+      - url: "{{ base_url }}/clientes?status=todos"
+        name: Listar clientes
+        meta:
+          id: req_a6a0ede9679b48bea0d0630d2966e4d5
+          created: 1758369033862
+          modified: 1758490063483
+          isPrivate: false
+          description: >+
+            ATIVOS: http://127.0.0.1:8000/clientes?status=ativo
+
+
+            INATIVOS: http://127.0.0.1:8000/clientes?status=inativo
+
+
+            TODOS: http://127.0.0.1:8000/clientes?status=todos
+
+
+            ATIVOS: http://127.0.0.1:8000/clientes/
+
+
+            POR NOME ENTRE ATIVOS: 
+
+            http://localhost:8000/clientes/?search=HYGOR
+
+
+            POR NOME ENTRE INATIVOS:
+            http://localhost:8000/clientes/search=Silva&status=Inativo
+
+
+            POR NOME ENTRE TODOS: 
+
+            http://localhost:8000/clientes/?search=HYGOR&status=todos
+
+
+          sortKey: -1758389636914
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/clientes/41"
+        name: Consultar cliente por ID
+        meta:
+          id: req_eb6c6bf7d04b46c98df18fd8ff7693b2
+          created: 1758372736577
+          modified: 1759454700117
+          isPrivate: false
+          description: ""
+          sortKey: -1758389636864
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/clientes/61"
+        name: Atualizar cliente
+        meta:
+          id: req_30d154babb754925bc515acd1275b211
+          created: 1758376735238
+          modified: 1759969055721
+          isPrivate: false
+          description: ""
+          sortKey: -1758389636664
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome_completo": "Hygor Vinycius"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/clientes/41"
+        name: Inativar cliente
+        meta:
+          id: req_cd82f262fd9e4f63a753c61db4c8de14
+          created: 1758378594281
+          modified: 1759454151794
+          isPrivate: false
+          description: ""
+          sortKey: -1758389636564
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/clientes/"
+        name: Criar cliente
+        meta:
+          id: req_4acb2c191279422fb45cc00b1df0a117
+          created: 1758461220063
+          modified: 1759968922937
+          isPrivate: false
+          description: ""
+          sortKey: -1758389637014
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome_completo": "Hygor Vinycius Onofre Pereira",
+              "tipo_cliente": "PJ",
+              "telefone": "41988776362",
+              "e_mail": "honofre@suaempresa.com",
+              "cpf": null,
+              "cnpj": "12345678000432",
+              "razao_social": "Hygor M Closet",
+              "nome_fantasia": "Hygor M Closet",
+            	"endereco": "Av Goioere, 170, Centro",
+            	"cidade": "Campo Mourão",
+            	"uf": "PR",
+            	"cep": "87302070"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Fornecedores
+    meta:
+      id: fld_04ef9a159f00467aa36ee4c982d5f5c4
+      created: 1758495622811
+      modified: 1758932893171
+      sortKey: -1758495622811
+      description: ""
+    children:
+      - url: "{{ base_url }}/fornecedores"
+        name: Criar fornecedor
+        meta:
+          id: req_ea3c4e860da74487bb86f092da8af390
+          created: 1758495629498
+          modified: 1759454809232
+          isPrivate: false
+          description: ""
+          sortKey: -1758674212073
+        method: POST
+        body:
+          mimeType: application/json
+          text: |+
+            {
+            	"cnpj": "15189357000126",
+            	"razao_social": "Enfin jeans ltda 2",
+            	"nome_fantasia": "Enfin 2",
+            	"cnae_principal": "1234567",
+            	"natureza_juridica": "1234",
+            	"endereco": "Av São Paulp, 520, Curitiba",
+            	"cep": "87302070",
+            	"uf": "PR",
+            	"email": "enfin2@enfin.com",
+            	"telefone": "44984341297",
+            	"whatsapp": "449843412987"
+            }
+
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/fornecedores?status=todos"
+        name: Listar fornecedores
+        meta:
+          id: req_0b5b5d33084f4fca815eaf9fa4d6ed37
+          created: 1758591751352
+          modified: 1759976878230
+          isPrivate: false
+          description: >-
+            ATIVOS: http://127.0.0.1:8000/fornecedores?status=ativo
+
+
+            INATIVOS: http://127.0.0.1:8000/fornecedores?status=inativo
+
+
+            TODOS: http://127.0.0.1:8000/fornecedores?status=todos
+
+
+            ATIVOS: http://127.0.0.1:8000/fornecedores/
+
+
+            POR NOME ENTRE ATIVOS:
+            http://localhost:8000/fornecedores/?search=shopee
+
+
+            POR NOME ENTRE INATIVOS:
+            http://localhost:8000/fornecedores/search=malwee&status=Inativo
+
+
+            POR NOME ENTRE TODOS:
+            http://localhost:8000/fornecedores/?search=malwee&status=todos
+          sortKey: -1758674212023
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/fornecedores/1"
+        name: Consultar fornecedor por ID
+        meta:
+          id: req_6f5a59163ffe4cfbb3865279fa87970a
+          created: 1758674211973
+          modified: 1759976859878
+          isPrivate: false
+          description: >-
+            ATIVOS: http://127.0.0.1:8000/fornecedores?status=ativo
+
+
+            INATIVOS: http://127.0.0.1:8000/fornecedores?status=inativo
+
+
+            TODOS: http://127.0.0.1:8000/fornecedores?status=todos
+
+
+            ATIVOS: http://127.0.0.1:8000/fornecedores/
+
+
+            POR NOME ENTRE ATIVOS:
+            http://localhost:8000/fornecedores/?search=shopee
+
+
+            POR NOME ENTRE INATIVOS:
+            http://localhost:8000/fornecedores/search=malwee&status=Inativo
+
+
+            POR NOME ENTRE TODOS:
+            http://localhost:8000/fornecedores/?search=malwee&status=todos
+          sortKey: -1758674211973
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/fornecedores/3"
+        name: Atualizar fornecedor
+        meta:
+          id: req_5b8f683bbb19438c91907331f301575a
+          created: 1758675234985
+          modified: 1759454948834
+          isPrivate: false
+          description: ""
+          sortKey: -1758495631571
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"endereco": "Rua alterada, 321, Bairro jardim Alegre"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/fornecedores/41"
+        name: Inativar fornecedor
+        meta:
+          id: req_951263d354a540b9970f598b668253cc
+          created: 1758676267991
+          modified: 1759454972345
+          isPrivate: false
+          description: ""
+          sortKey: -1758495631471
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Usuários
+    meta:
+      id: fld_1672a5ada6c24699a9fcaef2ad32721c
+      created: 1758932883219
+      modified: 1758932883219
+      sortKey: -1758932883219
+      description: ""
+    children:
+      - url: "{{base_url}}/usuarios/"
+        name: Criar usuario
+        meta:
+          id: req_c0f41d26ec9249b6906aa3217e38f6e8
+          created: 1758933484826
+          modified: 1759455271697
+          isPrivate: false
+          description: ""
+          sortKey: -1759366132917
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Francisco Monteiro Onofre",
+            	"email": "franciscoonofre@gmail.com",
+            	"funcao": "contador"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/usuarios?status=ativo"
+        name: Listar usuários
+        meta:
+          id: req_2b1d4c4e664c459ea9517bca8a5d821e
+          created: 1759364389576
+          modified: 1759451965735
+          isPrivate: false
+          description: ""
+          sortKey: -1759366132867
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/usuarios/3"
+        name: Consultar por ID
+        meta:
+          id: req_8eb5157d8582417cbc924be8b26d6629
+          created: 1759366132817
+          modified: 1759455298373
+          isPrivate: false
+          description: ""
+          sortKey: -1759366132817
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/usuarios/2"
+        name: Atualizar usuario
+        meta:
+          id: req_5c5eb10e1d8f4505b72b9c75da812b75
+          created: 1759369309335
+          modified: 1759455320150
+          isPrivate: false
+          description: ""
+          sortKey: -1758933484726
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"funcao": "Contador JR"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Empresa
+    meta:
+      id: fld_72c4650151734b1b82e248857ff4a576
+      created: 1759457860142
+      modified: 1759457860142
+      sortKey: -1759457860142
+      description: ""
+    children:
+      - url: "{{base_url}}/empresas"
+        name: Criar empresa
+        meta:
+          id: req_3c971658e4184ea486e2aabc928223b1
+          created: 1759457878212
+          modified: 1759458913373
+          isPrivate: false
+          description: ""
+          sortKey: -1759434930952.75
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"cnpj":"10159993000123",
+            	"razao_social":"Larissa Monteiro Closet",
+            	"nome_fantasia":"Larissa Monteiro Closet",
+            	"cnae_principal":"1234567",
+            	"natureza_juridica":"1234",
+            	"endereco":"Avenida GoioerÊ, 170",
+            	"cep":"87302070",
+            	"uf":"PR",
+            	"email":"larissamcloset@gmail.com",
+            	"telefone":"44984341256",
+            	"whatsapp":"44984341256"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/empresas"
+        name: Listar empresas
+        meta:
+          id: req_31f108f979c04a8da408545453c81e82
+          created: 1759457908822
+          modified: 1759459123007
+          isPrivate: false
+          description: ""
+          sortKey: -1759434930852.75
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/empresas/1"
+        name: Atualizar empresa
+        meta:
+          id: req_e2afedeeb16c430a9c4d6a5fed7d9562
+          created: 1759459201075
+          modified: 1759887544835
+          isPrivate: false
+          description: ""
+          sortKey: -1759434930752.75
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome_fantasia":"Larissa M. Closet"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Categorias de produtos
+    meta:
+      id: fld_57f193e2b4bf4de795865803beb84d68
+      created: 1759888272805
+      modified: 1759888272805
+      sortKey: -1759888272806
+      description: ""
+    children:
+      - url: "{{base_url}}/categorias/"
+        name: Criar categoria
+        meta:
+          id: req_05ec05ec683347368138350667ee95f4
+          created: 1759888276772
+          modified: 1759969690257
+          isPrivate: false
+          description: ""
+          sortKey: -1759889174291
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"descricao": "Saia"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/categorias/"
+        name: Listar categoria
+        meta:
+          id: req_3069d73714b4433db9e20a13f092c7c3
+          created: 1759889046346
+          modified: 1759889134755
+          isPrivate: false
+          description: ""
+          sortKey: -1759889046346
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/categorias/2"
+        name: Consultar por ID
+        meta:
+          id: req_b7b904f227054c1aac49cdcc5e3d8091
+          created: 1759889174191
+          modified: 1759889306806
+          isPrivate: false
+          description: ""
+          sortKey: -1759889174191
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/categorias/2"
+        name: Atualizar categoria
+        meta:
+          id: req_026c1e86235440f8b9600a1c44efa224
+          created: 1759889337508
+          modified: 1759889912431
+          isPrivate: false
+          description: ""
+          sortKey: -1759888276672
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"status": "Ativo"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/categorias/3"
+        name: Inativar categoria
+        meta:
+          id: req_a858749792994af191a11bbafb10fb6a
+          created: 1759889738150
+          modified: 1759970670312
+          isPrivate: false
+          description: ""
+          sortKey: -1759888276572
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produtos
+    meta:
+      id: fld_381bc832b42b4b6c9715550717fb392f
+      created: 1759969394209
+      modified: 1759969394209
+      sortKey: -1759969394209
+      description: ""
+    children:
+      - url: "{{base_url}}/produtos"
+        name: Criar produto
+        meta:
+          id: req_52f013109aed48cfaba35d16a40de513
+          created: 1759969405105
+          modified: 1761225425224
+          isPrivate: false
+          description: ""
+          sortKey: -1759970643378
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome_produto":"Bolsas",
+            	"descricao":"Bolsas femininas",
+            	"marca":"Outros",
+            	"gestao":"Própria",
+            	"id_categoria_produto":"2"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/produtos"
+        name: Listar produtos
+        meta:
+          id: req_4cf8750bc33d4f15b403f4aacdaac9af
+          created: 1759969912026
+          modified: 1759971310207
+          isPrivate: false
+          description: ""
+          sortKey: -1759970398372.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/produtos/1"
+        name: Consultar por ID
+        meta:
+          id: req_9116a7a5f682457eaca06641c7c0e735
+          created: 1759970036370
+          modified: 1759971313789
+          isPrivate: false
+          description: ""
+          sortKey: -1759970357538.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/produtos/1"
+        name: Atualizar categoria
+        meta:
+          id: req_eb00f87d3328474291732521de2b231a
+          created: 1759970316704
+          modified: 1759971338114
+          isPrivate: false
+          description: ""
+          sortKey: -1759970316704
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"status":"Ativo"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/produtos/1"
+        name: Inativar produto
+        meta:
+          id: req_45a365420b3144d39482a0b1f4a40ca4
+          created: 1759970643278
+          modified: 1759971304464
+          isPrivate: false
+          description: ""
+          sortKey: -1759969911926
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Variação produtos
+    meta:
+      id: fld_b593e96d75d34e5bbd930408d2278c65
+      created: 1759970957088
+      modified: 1759970957088
+      sortKey: -1759970957088
+      description: ""
+    children:
+      - url: "{{base_url}}/variacoes"
+        name: Criar variação produto
+        meta:
+          id: req_3b261e86dd0046caae3585df0d22fa76
+          created: 1759970961565
+          modified: 1761225463189
+          isPrivate: false
+          description: ""
+          sortKey: -1759976913980
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"tamanho":"P",
+            	"cor":"Preta",
+            	"ean":"1234567891297",
+            	"sku":"12345678998765432125",
+            	"custo":25.00,
+            	"preco_venda":89.90,
+            	"id_produto":21,
+            	"id_fornecedor":3
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/variacoes"
+        name: Listar variações
+        meta:
+          id: req_b6d4bf8d52084d029c189021c384942a
+          created: 1759973858381
+          modified: 1759977568072
+          isPrivate: false
+          description: ""
+          sortKey: -1759976913930
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/variacoes/1"
+        name: Consultar variação por ID
+        meta:
+          id: req_e113baf14cb446cd90281f28a2ceab6b
+          created: 1759976391245
+          modified: 1759977571186
+          isPrivate: false
+          description: ""
+          sortKey: -1759976913905
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/variacoes/1"
+        name: Atualizar variação
+        meta:
+          id: req_a34afd03a3974feaa2b8aef594147f91
+          created: 1759976430232
+          modified: 1759976906458
+          isPrivate: false
+          description: ""
+          sortKey: -1759976430232
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_fornecedor": 21
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/variacoes/1"
+        name: Inativar variação
+        meta:
+          id: req_cd0ca7cbbda2411e82c873855adc065d
+          created: 1759976913880
+          modified: 1759977574167
+          isPrivate: false
+          description: ""
+          sortKey: -1759976430132
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Formas de pagamentos
+    meta:
+      id: fld_03a8bafa987e435b9727cf3bf2e2d0a7
+      created: 1759977470677
+      modified: 1759977470677
+      sortKey: -1759977470677
+      description: ""
+    children:
+      - url: "{{base_url}}/formas-pagamento"
+        name: Criar forma pgto
+        meta:
+          id: req_02b5937144984deb99db65a09caeda19
+          created: 1759977474916
+          modified: 1760378669187
+          isPrivate: false
+          description: ""
+          sortKey: -1759977838371
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"descricao": "Teste"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/formas-pagamento?status=Todos"
+        name: Listar formas pgto
+        meta:
+          id: req_22aaeefb30844aff9798f8a6957aa718
+          created: 1759977662224
+          modified: 1759978214857
+          isPrivate: false
+          description: ""
+          sortKey: -1759977777571.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/formas-pagamento/2"
+        name: Consultar forma pgto por ID
+        meta:
+          id: req_fc72c2a1316949809fc328ab26d64d5c
+          created: 1759977716772
+          modified: 1759977857935
+          isPrivate: false
+          description: ""
+          sortKey: -1759977716772
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/formas-pagamento/3"
+        name: Atualizar forma pgto
+        meta:
+          id: req_b9823fa90acc4e7f9f64d7adfc8284ce
+          created: 1759977838271
+          modified: 1759978101283
+          isPrivate: false
+          description: ""
+          sortKey: -1759977568520
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"descricao": "Cartão de débito"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/formas-pagamento/7"
+        name: Inativar forma pgto
+        meta:
+          id: req_42b8eb1ca17146fc93e07b21f0868b31
+          created: 1759978065852
+          modified: 1759978133860
+          isPrivate: false
+          description: ""
+          sortKey: -1759977474816
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Condições de pagamentos
+    meta:
+      id: fld_ce232d11d38a4621be4b1c1a7711352d
+      created: 1759978632782
+      modified: 1759978632782
+      sortKey: -1759978632782
+      description: ""
+    children:
+      - url: "{{base_url}}/condicoes-pagamento"
+        name: Criar condição pgto
+        meta:
+          id: req_5d9d3902757d46d6aa00737ee9b75594
+          created: 1759978636307
+          modified: 1760379496907
+          isPrivate: false
+          description: ""
+          sortKey: -1760379132405
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"descricao": "Crédito 3x",
+            	"parcelas": 3,
+            	"intervalo_dias_parc": 30
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/condicoes-pagamento?status=todos"
+        name: Listar condição pgto
+        meta:
+          id: req_9974c509ae174c7da2ae71d413580314
+          created: 1760378650248
+          modified: 1760379526034
+          isPrivate: false
+          description: ""
+          sortKey: -1760378947314
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/condicoes-pagamento/2"
+        name: Consultar condição pgto por ID
+        meta:
+          id: req_0c9a0775fb6c4484ac9f32dfe6b60501
+          created: 1760378762223
+          modified: 1760378824719
+          isPrivate: false
+          description: ""
+          sortKey: -1760378762223
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/condicoes-pagamento/1"
+        name: Atualizar condição pgto
+        meta:
+          id: req_899544905e19402da23114da7eb5c825
+          created: 1760378828324
+          modified: 1760379511589
+          isPrivate: false
+          description: ""
+          sortKey: -1760378706235.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"status":"Ativo"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/condicoes-pagamento/1"
+        name: Inativar condição pagto
+        meta:
+          id: req_0417b873ddf64c91b9c4f1fa9ce91d1c
+          created: 1760379132305
+          modified: 1760379514614
+          isPrivate: false
+          description: ""
+          sortKey: -1760378678241.75
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Maquininhas
+    meta:
+      id: fld_57f6a193fb274fbbbf4eebc064eaa24a
+      created: 1760379488661
+      modified: 1760379488661
+      sortKey: -1760379488661
+      description: ""
+    children:
+      - url: "{{base_url}}/maquininhas"
+        name: Criar maquininha
+        meta:
+          id: req_df38176c91fc46809e04c8199aa01a08
+          created: 1760379491633
+          modified: 1760380221914
+          isPrivate: false
+          description: ""
+          sortKey: -1760379491633
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome_maquininha":"Marcado Pago",
+            	"taxa_credito_a_vista":0.155,
+            	"taxa_debito":0.080
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/maquininhas"
+        name: Listar maquininhas
+        meta:
+          id: req_b06440d4e94046719d6eb0078449d26f
+          created: 1760379977896
+          modified: 1760379999344
+          isPrivate: false
+          description: ""
+          sortKey: -1760379491533
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/maquininhas/"
+        name: Consultar maquininha por ID
+        meta:
+          id: req_6ee8ff291b334c6a96e9942345f0d2db
+          created: 1760380054018
+          modified: 1760380084755
+          isPrivate: false
+          description: ""
+          sortKey: -1760379311969
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/maquininhas/1"
+        name: Atualizar maquininha
+        meta:
+          id: req_5a236bc4ed8a49788002ca7c5d39c5f7
+          created: 1760380102694
+          modified: 1760380156260
+          isPrivate: false
+          description: ""
+          sortKey: -1760379222187
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"taxa_credito_a_vista":0.13
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/maquininhas/3"
+        name: Inativar maquininha
+        meta:
+          id: req_3ad3dd778df04b4aa068a43fd730110b
+          created: 1760380170595
+          modified: 1760380235362
+          isPrivate: false
+          description: ""
+          sortKey: -1760379222087
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Taxa parcelamento
+    meta:
+      id: fld_4da22e0e47a24832a056c4ee18e6a34c
+      created: 1760380556333
+      modified: 1760380556333
+      sortKey: -1760380556333
+      description: ""
+    children:
+      - url: "{{base_url}}/taxas-parcelamento"
+        name: Criar taxa
+        meta:
+          id: req_0551468b22934311941b5b3997c65c0c
+          created: 1760380560760
+          modified: 1760380999234
+          isPrivate: false
+          description: ""
+          sortKey: -1760380856368
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"numero_parcelas":6,
+            	"taxa":0.25,
+            	"id_maquininha":2
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/taxas-parcelamento?maquininha_id=1"
+        name: Listar taxas
+        meta:
+          id: req_4bb3f39ed028414b8989d30eddee06be
+          created: 1760380727104
+          modified: 1760380913045
+          isPrivate: false
+          description: ""
+          sortKey: -1760380856318
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/taxas-parcelamento/1"
+        name: Consultar taxas por ID
+        meta:
+          id: req_a076a9d106b44c24af6256797d15b8a5
+          created: 1760380856268
+          modified: 1760380901992
+          isPrivate: false
+          description: ""
+          sortKey: -1760380856268
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/taxas-parcelamento/6"
+        name: Atualizar taxa
+        meta:
+          id: req_9167e89fb24140608b081dde8fb127ba
+          created: 1760380917273
+          modified: 1760381021507
+          isPrivate: false
+          description: ""
+          sortKey: -1760380856168
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id_maquininha":2
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/taxas-parcelamento/6"
+        name: Deletar taxa
+        meta:
+          id: req_05cbd2ace21b468ab25116443d122e44
+          created: 1760381736370
+          modified: 1760381775746
+          isPrivate: false
+          description: ""
+          sortKey: -1760380856068
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Vendas
+    meta:
+      id: fld_16f3080f85b04e64a8a0ceacd82ab3cb
+      created: 1760458032786
+      modified: 1761228262005
+      sortKey: -1760458032986
+      description: ""
+    children:
+      - url: "{{base_url}}/vendas"
+        name: Criar venda
+        meta:
+          id: req_d24efa685e0843e19abb64436d1aae12
+          created: 1760458038197
+          modified: 1761175308679
+          isPrivate: false
+          description: ""
+          sortKey: -1760458038197
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "id_cliente": 41,
+                "id_usuario": 1,
+                "itens": [
+                    {
+                        "id_variacao": 1,
+                        "quantidade": 2
+                    },
+                    {
+                        "id_variacao": 3,
+                        "quantidade": 1
+                    }
+                ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/vendas/22/cancelar"
+        name: Cancelar venda
+        meta:
+          id: req_742c6e126aac4416975262fb21cb830c
+          created: 1761176116799
+          modified: 1761224366668
+          isPrivate: false
+          description: ""
+          sortKey: -1761176116799
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Compras
+    meta:
+      id: fld_b036f8deff9643589828e48bc2035eb1
+      created: 1761228247034
+      modified: 1761228258979
+      sortKey: -1760458032886
+      description: ""
+    children:
+      - url: "{{base_url}}/compras"
+        name: Criar compra
+        meta:
+          id: req_d2b61437c8104604be24a664ae97c91d
+          created: 1761228265922
+          modified: 1761231119183
+          isPrivate: false
+          description: ""
+          sortKey: -1761228265922
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+                "id_fornecedor": 3,
+                "nota_fiscal": "12345",
+                "itens": [
+                    { "id_variacao": 2, "quantidade": 1, "custo_unitario": 100.00 }
+                ],
+                "parcelas": [
+                    {
+                        "data_vencimento": "2025-11-23",
+                        "valor_parcela": 50.00
+                    },
+                    {
+                        "data_vencimento": "2025-12-23",
+                        "valor_parcela": 50.00
+                    }
+                ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/compras/5/cancelar"
+        name: Cancelar compra
+        meta:
+          id: req_e2739ff7ea25414584fbfd42017cf13b
+          created: 1761237310039
+          modified: 1761237728434
+          isPrivate: false
+          description: ""
+          sortKey: -1761228266022
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Pagamentos
+    meta:
+      id: fld_323cad1c8a7743018631d08379d27654
+      created: 1761235510674
+      modified: 1761684975759
+      sortKey: -1760458032936
+      description: ""
+    children:
+      - url: "{{base_url}}/pagamentos"
+        name: Criar pagamento
+        meta:
+          id: req_b6c0039ad5234ffcae0cf49788ebd95d
+          created: 1761235515641
+          modified: 1761684889298
+          isPrivate: false
+          description: ""
+          sortKey: -1761235515641
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "id_cta_a_pgto": 21,
+                "valor_pagamento": 29.50,
+                "data_pagamento": "2025-11-23",
+                "id_forma_pgto": 1, 
+                "valor_juros": 1.00,
+                "valor_desconto": 0.50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{base_url}}/pagamentos/21/cancelar"
+        name: Estornar pagamento
+        meta:
+          id: req_a249777e7f27459da28b01b88fa6c836
+          created: 1761235813745
+          modified: 1761684932935
+          isPrivate: false
+          description: ""
+          sortKey: -1761235813745
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Recebimentos
+    meta:
+      id: fld_54ae2c962e0f40a191d94543409e6eb7
+      created: 1761685688887
+      modified: 1761685688887
+      sortKey: -1761685688887
+      description: ""
+    children:
+      - url: "{{base_url}}/recebimentos"
+        name: Criar recebimento
+        meta:
+          id: req_cea4954a2ffa47e7a5c2b2cae6220fc6
+          created: 1761685699768
+          modified: 1761689298546
+          isPrivate: false
+          description: ""
+          sortKey: -1761685699768
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "id_cta_a_receber": 1,
+                "valor_pagamento": 150.00,
+                "data_pagamento": "2025-10-28",
+                "id_forma_pgto": 3,
+                "valor_juros": 0.00,
+                "valor_desconto": 0.00,
+                "valor_tx_maquininha": 2.50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/recebimentos/1/cancelar"
+        name: Estorno recebimento
+        meta:
+          id: req_9054e62ce8894e4cabcf5a331d81db11
+          created: 1761691227833
+          modified: 1761691265573
+          isPrivate: false
+          description: ""
+          sortKey: -1761691227833
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1a2e98742a944fada1601d3ecdbcfb91e03d95ec
+    created: 1757897025674
+    modified: 1757897025674
+environments:
+  name: Base Environment
+  meta:
+    id: env_1a2e98742a944fada1601d3ecdbcfb91e03d95ec
+    created: 1757897025267
+    modified: 1757897025267
+    isPrivate: false

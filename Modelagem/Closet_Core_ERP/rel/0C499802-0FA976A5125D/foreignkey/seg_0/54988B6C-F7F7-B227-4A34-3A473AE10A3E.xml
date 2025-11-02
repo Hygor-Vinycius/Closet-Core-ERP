@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="54988B6C-F7F7-B227-4A34-3A473AE10A3E" containerWithKeyObject="8658D84E-15B9-32DA-A382-B5E2BF0287BC" localFKIndex="39C100BF-3225-1C58-C30F-B94BBCD5F8B2" name="estoque_variacao_produtos_FK">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-09 02:01:42 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<referredTableLongName>variacao_produtos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>703B8AC8-75C9-1337-61C0-3DAED084315B</referredTableID>
+<keyObject>BE45D278-F5F4-B591-EC84-9984A65874E0</keyObject>
+<referredKeyID>BE45D278-F5F4-B591-EC84-9984A65874E0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_variacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

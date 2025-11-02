@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Closet_Core_ERP" id="FB13C187-F3A8-8FE6-1622-2816EDB6BEC3" version="3.5">
+<createdBy>Hygor</createdBy>
+<createdTime>2025-09-06 18:57:19 UTC</createdTime>
+<ownerDesignName>Closet_Core_ERP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FB13C187-F3A8-8FE6-1622-2816EDB6BEC3</designId>
+</OSDM_Design>

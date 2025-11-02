@@ -1,0 +1,3 @@
+1. Na tabela "itens_compras", a soma dos ítens tem que ser igual ao valor total da nota na tabela "compras".
+2. Nos registros de compra de mercadorias e de vendas a lógica deve armazenar o ID na coluna "tipo_movimento" na tabela 
+movimento_estoque

@@ -1,0 +1,9 @@
+Criar uma conexão para o usuário:
+
+ 1 - Criar conexão em "+".
+ 2 - Dar um nome para a conexão
+ 3 - Usuário Sys
+ 4 - Atribuição SYSDBA
+ 5 - Nome do serviço XEPDB1
+ 6 -  
+ 7 - 
