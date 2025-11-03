@@ -1,0 +1,7 @@
+"ID_FORMA_PGTO","DESCRICAO","STATUS"
+1,"Cartão de crédito à vista","Ativo"
+2,"Cartão de crédito à prazo","Ativo"
+3,"Cartão de débito","Ativo"
+4,"Boleto bancário","Ativo"
+5,"Pix","Ativo"
+6,"Crediário","Ativo"

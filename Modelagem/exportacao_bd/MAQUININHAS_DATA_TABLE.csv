@@ -1,0 +1,4 @@
+"ID_MAQUININHA","NOME_MAQUININHA","TAXA_CREDITO_A_VISTA","TAXA_DEBITO","STATUS"
+1,"Stone",0,13,0,07,"Ativo"
+2,"Ton",0,15,0,08,"Ativo"
+22,"Mercado Pago",0,12,0,09,"Ativo"

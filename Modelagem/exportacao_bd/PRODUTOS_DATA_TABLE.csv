@@ -1,0 +1,7 @@
+"ID_PRODUTO","NOME_PRODUTO","DESCRICAO","MARCA","GESTAO","ID_CATEGORIA_PRODUTO","STATUS"
+41,"Calça mon","","Malwee","Própria",1,"Ativo"
+42,"Calcinhas","","","Consignado",2,"Ativo"
+1,"Vestido","Estampa de onça","Importado","consignado",5,"Ativo"
+2,"Calça","Jeans azul","Melissa","Própria",1,"Ativo"
+3,"Brincos","Pérola","Outros","Própria",2,"Ativo"
+21,"Bolsas","Bolsas femininas","Outros","Própria",2,"Ativo"

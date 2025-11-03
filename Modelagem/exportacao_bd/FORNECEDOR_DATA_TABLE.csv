@@ -1,0 +1,7 @@
+"ID_FORNECEDOR","CNPJ","RAZAO_SOCIAL","NOME_FANTASIA","CNAE_PRINCIPAL","NATUREZA_JURIDICA","ENDERECO","CEP","UF","EMAIL","TELEFONE","WHATSAPP","DATA_ATUALIZACAO","STATUS","DATA_CADASTRO","CIDADE"
+61,"10189321000145","Teste fornecedor","","","","Endereço teste","87302070","PR","fornteste@gmai.com","44984341256","",31/10/25,"Ativo",31/10/25,"Cidade teste"
+3,"10189321000199","Malwee ind vestuario ltda","Malwee","1234567","1234","Rua alterada, 321, Bairro jardim Alegre","87302070","PR","malwee@malwee.com","44984341256","44984341256",31/10/25,"Inativo",21/09/25,"Campo Mourão"
+4,"15189357000198","Shopee comercio eletronico ltda","Shopee","1234567","1234","Av 123, 789, São Paulo","87302070","SP","shopee@shopee.com","44984341256","44984341256",31/10/25,"Ativo",21/09/25,"Campo Mourão"
+5,"15189357000199","Melinda jeans ltda","Melinda","1234567","1234","Av Brasil, 789, Blumenau","87302070","SC","melinda@melinda.com","44984341256","44984341256",31/10/25,"Ativo",21/09/25,"Campo Mourão"
+21,"15189357000196","Enfin jeans ltda","Enfin","1234567","1234","Av São Paulp, 520, Curitiba","87302070","PR","enfin@enfin.com","44984341298","44984341298",31/10/25,"Ativo",22/09/25,"Campo Mourão"
+41,"15189357000126","Enfin jeans ltda 2","Enfin 2","1234567","1234","Av São Paulp, 520, Curitiba","87302070","PR","enfin2@enfin.com","44984341297","449843412987",31/10/25,"Inativo",02/10/25,"Campo Mourão"

@@ -1,0 +1,43 @@
+--------------------------------------------------------
+--  Arquivo criado - domingo-novembro-02-2025   
+--------------------------------------------------------
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CATEGORIA_PRODUTOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CLIENTES.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\COMPRAS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CONDICAO_PAGAMENTO.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CONTAS_A_PAGAR.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CONTAS_A_RECEBER.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\EMPRESA.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\FORMAS_PAGAMENTOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\FORNECEDOR.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\ITENS_COMPRA.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\ITENS_VENDA.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\MAQUININHAS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\MOVIMENTO_ESTOQUE.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\PAGAMENTOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\PRODUTOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\RECEBIMENTOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\TAXA_PARCELAMENTO.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\USUARIOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\VARIACAO_PRODUTOS.sql
+@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\VENDAS.sql
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CATEGORIA_PRODUTOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CLIENTES_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\COMPRAS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CONDICAO_PAGAMENTO_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CONTAS_A_PAGAR_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\CONTAS_A_RECEBER_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\EMPRESA_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\FORMAS_PAGAMENTOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\FORNECEDOR_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\ITENS_COMPRA_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\ITENS_VENDA_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\MAQUININHAS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\MOVIMENTO_ESTOQUE_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\PAGAMENTOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\PRODUTOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\RECEBIMENTOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\TAXA_PARCELAMENTO_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\USUARIOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\VARIACAO_PRODUTOS_DATA_TABLE.csv
+--@F:\Estudos TI\Closet Core - Sistema ERP\Modelagem\exportacao_bd\VENDAS_DATA_TABLE.csv
