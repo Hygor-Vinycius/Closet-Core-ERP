@@ -18,88 +18,52 @@ import VariacoesProduto from '../pages/VariacoesProduto';
 import NovaCompra from '../pages/NovaCompra';
 import ListarCompras from '../pages/ListarCompras';
 import ContasAPagar from '../pages/ContasAPagar';
-import NovaVenda from '../pages/NovaVenda';
 import Estoque from '../pages/Estoque';
-// (Vamos criar as outras páginas em breve)
-// import CategoriasProduto from '../pages/CategoriasProduto'; 
-// ... etc ...
+import NovaVenda from '../pages/NovaVenda';
+import ListarVendas from '../pages/ListarVendas';
 
-// Esta é a definição das nossas "rotas de frontend"
+// Definição das rotas
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout />, // Todas as rotas usarão este "template"
+    element: <MainLayout />, 
     children: [
-      // Cada "página" é um "filho" do layout
-      {
-        path: '/', // Rota raiz (ex: localhost:5173/)
-        element: <Dashboard />,
-      },
-      {
-        path: '/usuarios', // Rota /usuarios
-        element: <Usuarios />,
-      },
-      { 
-        path: '/categorias', 
-        element: <CategoriasProduto />,
-      },
-      { 
-        path: '/formas-pagamento', 
-        element: <FormasPagamento />,
-      },
-      {
-        path: '/condicoes-pagamento', 
-        element: <CondicoesPagamento />,
-      },
-      { 
-        path: '/maquininhas', 
-        element: <Maquininhas />,
-      },
-      { 
-        path: '/taxas-parcelamento', 
-        element: <TaxasParcelamento />,
-      },
-      { 
-        path: '/clientes', 
-        element: <Clientes />,
-      },
-      {
-        path: '/fornecedores', 
-        element: <Fornecedores />,
-      },
-      { 
-        path: '/produtos', 
-        element: <Produtos />,
-      },
-      { 
-        path: '/variacoes-produto', 
-        element: <VariacoesProduto />,
-      },
-      { 
-        path: '/compras/nova', 
-        element: <NovaCompra />,
-      },
-      {
-        path: '/compras',
-        element: <ListarCompras />,
-      },
-      { 
-        path: '/contas-a-pagar',
-        element: <ContasAPagar />,
-      },
-      { // <-- 2. ADICIONE ESTE BLOCO
-        path: '/estoque', 
-        element: <Estoque />,
-      },
+      // --- Dashboard ---
+      { path: '/', element: <Dashboard /> },
+
+      // --- Sprint 1: Configurações ---
+      { path: '/usuarios', element: <Usuarios /> },
+      { path: '/categorias', element: <CategoriasProduto /> },
+      { path: '/formas-pagamento', element: <FormasPagamento /> },
+      { path: '/condicoes-pagamento', element: <CondicoesPagamento /> },
+      { path: '/maquininhas', element: <Maquininhas /> },
+      { path: '/taxas-parcelamento', element: <TaxasParcelamento /> },
+
+      // --- Sprint 2: Cadastros ---
+      { path: '/clientes', element: <Clientes /> },
+      { path: '/fornecedores', element: <Fornecedores /> },
+      { path: '/produtos', element: <Produtos /> },
+      { path: '/variacoes-produto', element: <VariacoesProduto /> },
+
+      // --- Sprint 3: Compras ---
+      { path: '/compras/nova', element: <NovaCompra /> },
+      { path: '/compras', element: <ListarCompras /> },
+      { path: '/contas-a-pagar', element: <ContasAPagar /> },
+
+      // --- Sprint 4: Vendas e Estoque ---
+      { path: '/estoque', element: <Estoque /> },
       { 
         path: '/vendas/nova', 
-        element: <NovaVenda />,
-      }
+        element: <NovaVenda /> 
+      }, // <--- A vírgula que faltava estava aqui!
+      { 
+        path: '/vendas', 
+        element: <ListarVendas /> 
+      },
     ],
   },
 ]);
 
-// Componente que fornece as rotas para a aplicação
 function AppRouter() {
   return <RouterProvider router={router} />;
 }
