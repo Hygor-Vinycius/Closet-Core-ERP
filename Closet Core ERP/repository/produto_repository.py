@@ -27,4 +27,4 @@ class ProdutoRepository(BaseRepository):
             termo_busca = f"%{nome}%"
             query = query.filter(Produtos.nome_produto.ilike(termo_busca))
         
-        return query.all()
+        return query.order_by(Produtos.id_produto.asc()).all()

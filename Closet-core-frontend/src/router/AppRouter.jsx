@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // Importa nosso "Template" principal
 import MainLayout from '../components/layout/MainLayout';
 
-// Importa as páginas (que ainda vamos criar)
+// Importa as páginas
 import Dashboard from '../pages/Dashboard';
 import Usuarios from '../pages/Usuarios';
 import CategoriasProduto from '../pages/CategoriasProduto';

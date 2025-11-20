@@ -36,4 +36,4 @@ class VariacaoProdutosRepository(BaseRepository):
         if produto_id:
             query = query.filter(VariacaoProdutos.id_produto == produto_id)
         
-        return query.all()
+        return query.order_by(VariacaoProdutos.id_variacao.asc()).all()

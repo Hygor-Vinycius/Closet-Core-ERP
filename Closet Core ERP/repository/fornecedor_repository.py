@@ -26,7 +26,7 @@ class FornecedorRepository(BaseRepository):
             query = query.filter(Fornecedor.razao_social.ilike(termo_busca))
         
         # Executa a consulta e retona todos os resultados
-        return query.all()
+        return query.order_by(Fornecedor.id_fornecedor.asc()).all()
     
     def find_by_unique_identifier(self, cnpj: str = None, razao_social: str = None, email: str = None) -> Optional[Fornecedor]:
         """

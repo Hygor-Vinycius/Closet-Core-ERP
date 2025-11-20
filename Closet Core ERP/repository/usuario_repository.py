@@ -29,7 +29,7 @@ class UsuarioRepository(BaseRepository):
             query = query.filter(Usuarios.status == status)
 
         # 3. Executa a consulta e retorna os resultados
-        return query.all()
+        return query.order_by(Usuarios.id_usuario.asc()).all()
     
     def find_by_unique_identifier(self, email: str = None) -> Optional[Usuarios]:
         """

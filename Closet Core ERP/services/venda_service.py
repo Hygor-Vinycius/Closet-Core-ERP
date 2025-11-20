@@ -3,6 +3,7 @@ from repository import VendaRepository, VariacaoProdutosRepository, ContasAReceb
 from sqlalchemy.orm import Session
 from models import Vendas, ItensVenda, ContasAReceber
 from fastapi import HTTPException
+from typing import Optional, List
 
 class ServiceVenda(BaseService[VendaRepository]):
     def __init__(self, session: Session):
@@ -152,3 +153,9 @@ class ServiceVenda(BaseService[VendaRepository]):
             self.session.rollback()
             print(f"Erro ao cancelar venda {venda_id}: {e}") # Log do erro
             raise HTTPException(status_code=500, detail="Ocorreu um erro interno ao cancelar a venda.")
+    
+    def listar_vendas(self, id_cliente: Optional[int] = None, status: Optional[str] = None):
+        """
+        Lista as vendas cadastradas.
+        """
+        return self.repository.buscar(id_cliente=id_cliente, status=status)

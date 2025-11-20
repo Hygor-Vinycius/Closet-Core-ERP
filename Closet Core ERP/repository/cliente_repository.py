@@ -27,7 +27,7 @@ class ClienteRepository(BaseRepository):
             query = query.filter(Clientes.nome_completo.ilike(termo_busca))
 
         # Executa a consulta e retorna todos os resultados
-        return query.all()
+        return query.order_by(Clientes.id_cliente.asc()).all()
     
     def find_by_unique_identifier(self, cpf: str = None, cnpj: str = None, email: str = None) -> Optional[Clientes]:
         """
