@@ -18,6 +18,7 @@ import VariacoesProduto from '../pages/VariacoesProduto';
 import NovaCompra from '../pages/NovaCompra';
 import ListarCompras from '../pages/ListarCompras';
 import ContasAPagar from '../pages/ContasAPagar';
+import ContasAReceber from '../pages/ContasAReceber'; // <--- NOVO IMPORT
 import Estoque from '../pages/Estoque';
 import NovaVenda from '../pages/NovaVenda';
 import ListarVendas from '../pages/ListarVendas';
@@ -45,17 +46,18 @@ const router = createBrowserRouter([
       { path: '/produtos', element: <Produtos /> },
       { path: '/variacoes-produto', element: <VariacoesProduto /> },
 
-      // --- Sprint 3: Compras ---
+      // --- Sprint 3: Compras e Financeiro ---
       { path: '/compras/nova', element: <NovaCompra /> },
       { path: '/compras', element: <ListarCompras /> },
       { path: '/contas-a-pagar', element: <ContasAPagar /> },
+      { path: '/contas-a-receber', element: <ContasAReceber /> }, // <--- NOVA ROTA ADICIONADA
 
       // --- Sprint 4: Vendas e Estoque ---
       { path: '/estoque', element: <Estoque /> },
       { 
         path: '/vendas/nova', 
         element: <NovaVenda /> 
-      }, // <--- A vírgula que faltava estava aqui!
+      },
       { 
         path: '/vendas', 
         element: <ListarVendas /> 
