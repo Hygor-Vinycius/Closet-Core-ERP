@@ -19,13 +19,12 @@ from routers import venda_router
 from routers import compra_router
 from routers import pagamento_router
 from routers import recebimento_router
-# (Seu main.py estava faltando o import do contas_a_pagar_router que fizemos)
 from routers import contas_a_pagar_router 
+from routers import dashboard_router
+from routers import contas_a_receber_router
 
 app = FastAPI()
 
-# --- 🚀 CÓDIGO DE CORREÇÃO (CORS) 🚀 ---
-# 2. ADICIONE ESTE BLOCO INTEIRO
 origins = [
     "http://localhost:5173", # Endereço padrão do seu frontend React/Vite
     "http://localhost:3000", # Outro endereço comum do React
@@ -38,8 +37,6 @@ app.add_middleware(
     allow_methods=["*"],     # Permite todos os métodos (GET, POST, PUT, etc.)
     allow_headers=["*"],     # Permite todos os cabeçalhos
 )
-# --- FIM DO BLOCO CORS ---
-
 
 # Router de cada arquivo:
 app.include_router(cliente_router.router)
@@ -57,4 +54,6 @@ app.include_router(venda_router.router)
 app.include_router(compra_router.router)
 app.include_router(pagamento_router.router)
 app.include_router(recebimento_router.router)
-app.include_router(contas_a_pagar_router.router) # <-- 3. ADICIONE ESTA LINHA
+app.include_router(contas_a_pagar_router.router)
+app.include_router(dashboard_router.router)
+app.include_router(contas_a_receber_router.router)
