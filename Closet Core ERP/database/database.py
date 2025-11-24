@@ -1,37 +1,48 @@
-# Em database.py
-
 import os
+import sys
 import oracledb
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 
-# Carrega as variáveis de ambiente do arquivo .env
-load_dotenv()
+# --- 1. Descobrir Caminho do Executável ---
+if getattr(sys, 'frozen', False):
+    application_path = os.path.dirname(sys.executable)
+else:
+    application_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# --- 2. Carregar .env ---
+env_path = os.path.join(application_path, '.env')
+if os.path.exists(env_path):
+    load_dotenv(dotenv_path=env_path)
+else:
+    print("--- ERRO CRÍTICO: Arquivo .env NÃO encontrado! ---")
 
 USER = os.getenv("USER")
 PASSWORD = os.getenv("PASSWORD")
 HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
-SID = os.getenv("SID") # Onde você define o service_name, ex: XEPDB1
+SID = os.getenv("SID")
 
-# --- LÓGICA DE CONEXÃO CORRIGIDA E ROBUSTA ---
+# --- 3. FORÇAR O MODO THICK (Usa as DLLs da pasta) ---
+try:
+    # Tenta inicializar o modo Thick procurando as DLLs na mesma pasta do executável
+    # Se estiver rodando como script, pode não achar, então o try/except protege
+    if getattr(sys, 'frozen', False):
+        oracledb.init_oracle_client(lib_dir=application_path)
+    else:
+        # Em desenvolvimento (script), tenta achar no PATH ou usa Thin
+        pass 
+except Exception as e:
+    print(f"AVISO: Não foi possível iniciar o Oracle Client (Thick Mode): {e}")
+    print("Tentando conectar no modo Thin...")
 
-# Usa a função makedsn para criar o DSN (Data Source Name) da forma correta.
-# Isso evita qualquer ambiguidade entre SID e Service Name.
+# --- 4. Criar Conexão ---
 dsn = oracledb.makedsn(HOST, PORT, service_name=SID)
+engine = create_engine(f"oracle+oracledb://{USER}:{PASSWORD}@{dsn}")
 
-# Cria o motor de conexão do SQLAlchemy usando o DSN.
-engine = create_engine(
-    f"oracle+oracledb://{USER}:{PASSWORD}@{dsn}"
-)
-
-# ------------------------------------
-
-# Cria o gerador de sessões
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# Função de dependência para a sessão de banco de dados
 def get_db():
     db = SessionLocal()
     try:

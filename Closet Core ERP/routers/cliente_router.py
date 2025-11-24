@@ -7,7 +7,7 @@ from typing import Optional
 
 router = APIRouter()
 
-@router.post("/clientes/")
+@router.post("/clientes")
 def cadastrar_cliente_api(cliente_data: dict, db: Session = Depends(get_db), status_code=200):
     """Endpoint da API: Recebe o pedido do cliente e passa para a camada de serviço."""
 
@@ -22,7 +22,7 @@ def cadastrar_cliente_api(cliente_data: dict, db: Session = Depends(get_db), sta
 
     return {"mensagem": f"Cliente {nome_exibicao} ID: {novo_cliente.id_cliente} cadastrado com sucesso!"}
 
-@router.get("/clientes/")
+@router.get("/clientes")
 def listar_clientes_api(search: Optional[str] = None, status: Optional[str] = "Ativo", db: Session = Depends(get_db)):
     """Endpoint da API: Retorna uma lista de clientes.
     Pode ser filtrado por status e/ou por termo de busca no nome.

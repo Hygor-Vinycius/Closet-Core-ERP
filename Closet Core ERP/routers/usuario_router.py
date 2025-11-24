@@ -7,7 +7,7 @@ from typing import Optional
 
 router = APIRouter()
 
-@router.post("/usuarios/")
+@router.post("/usuarios")
 def cadsatrar_usuario_api(usuario_data: dict, db: Session = Depends(get_db), status_code=200):
     """Endpoint da API: Recebe o pedido do cliente e passa para a camada de serviço."""
 
@@ -18,7 +18,7 @@ def cadsatrar_usuario_api(usuario_data: dict, db: Session = Depends(get_db), sta
 
     return mensagem
 
-@router.get("/usuarios/")
+@router.get("/usuarios")
 def listar_usuarios_api(search: Optional[str] = None, status: Optional[str] = "Ativo", db: Session = Depends(get_db)):
     """
     Endpoint da API: Retorna uma lista de usuários, podendo ser buscados por status ou por termo de busca no nome.
